@@ -7,11 +7,14 @@ const Hero = () => {
       {/* Animated background */}
       <div className="absolute inset-0 gradient-dark opacity-0 dark:opacity-50" />
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 dark:from-primary/10 dark:to-accent/10" />
-      
+
       {/* Floating orbs */}
       <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-      
+      <div
+        className="absolute bottom-20 right-20 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "2s" }}
+      />
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Mobile: Stack vertically, Desktop: Two columns */}
@@ -23,35 +26,52 @@ const Hero = () => {
                   Computer Engineering Student
                 </span>
               </div>
-              
+
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
                 Hi, I'm <span className="text-gradient">Harintharan N.</span>
               </h1>
-              
+
               <p className="text-lg md:text-xl lg:text-2xl text-gray-800 dark:text-muted-foreground">
-                Specializing in <span className="text-primary font-semibold">Full-Stack Development</span>,{" "}
-                <span className="text-accent font-semibold">Cloud Deployment(Devops concepts)</span>, and{" "}
-                <span className="text-primary font-semibold">Blockchain Technology</span>
+                Specializing in{" "}
+                <span className="text-primary font-semibold">
+                  Full-Stack Development
+                </span>
+                ,{" "}
+                <span className="text-accent font-semibold">
+                  Cloud Deployment(Devops concepts)
+                </span>
+                , and{" "}
+                <span className="text-primary font-semibold">
+                  Blockchain Technology
+                </span>
               </p>
-              
+
               <p className="text-base md:text-lg text-gray-700 dark:text-muted-foreground">
-                Building scalable web applications with Express.js, React, Spring Boot, and deploying on AWS & Azure
+                Building scalable web applications with Express.js, React,
+                Spring Boot, and deploying on AWS & Azure
               </p>
-              
+
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
                 <a href="#contact" className="inline-block">
-                  <Button size="lg" className="group shadow-elegant hover:shadow-xl transition-all">
+                  <Button
+                    size="lg"
+                    className="group shadow-elegant hover:shadow-xl transition-all"
+                  >
                     <Mail className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                     Contact Me
                   </Button>
                 </a>
-                <a href="/cvs/current.pdf" download="Harintharan_Nagalingam_CV.pdf" className="inline-block">
+                <a
+                  href={`${import.meta.env.BASE_URL}cvs/current.pdf`}
+                  download="Harintharan_Nagalingam_CV.pdf"
+                  className="inline-block"
+                >
                   <Button size="lg" variant="outline" className="group">
                     <FileDown className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
                     Download CV
                   </Button>
                 </a>
-                
+
                 {/* Mobile scroll indicator - inline with buttons */}
                 <div className="block md:hidden">
                   <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center animate-bounce">
@@ -59,7 +79,7 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex items-center justify-center lg:justify-start gap-4 pt-4">
                 <a
                   href="https://github.com/Harintharan"
@@ -67,7 +87,11 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
-                  <Button size="icon" variant="ghost" className="hover:bg-primary/10 hover:text-primary transition-smooth">
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="hover:bg-primary/10 hover:text-primary transition-smooth"
+                  >
                     <Github className="h-5 w-5" />
                   </Button>
                 </a>
@@ -78,13 +102,21 @@ const Hero = () => {
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <Button size="icon" variant="ghost" className="hover:bg-primary/10 hover:text-primary transition-smooth">
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="hover:bg-primary/10 hover:text-primary transition-smooth"
+                  >
                     <Linkedin className="h-5 w-5" />
                   </Button>
                 </a>
 
                 <a href="mailto:nharintharan@gmail.com" aria-label="Email">
-                  <Button size="icon" variant="ghost" className="hover:bg-primary/10 hover:text-primary transition-smooth">
+                  <Button
+                    size="icon"
+                    variant="ghost"
+                    className="hover:bg-primary/10 hover:text-primary transition-smooth"
+                  >
                     <Mail className="h-5 w-5" />
                   </Button>
                 </a>
@@ -98,7 +130,8 @@ const Hero = () => {
                   // src="/images/hari.jpeg"
                   // alt="Harintharan Nagalingam"
 
-                  src={`${import.meta.env.BASE_URL}images/hari.jpeg`} alt="Harintharan Nagalingam"
+                  src={`${import.meta.env.BASE_URL}images/hari.jpeg`}
+                  alt="Harintharan Nagalingam"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -106,7 +139,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll indicator - Desktop only */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
