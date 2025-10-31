@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+🌐 Harintharan Nagalingam — Personal Portfolio
+🔍 Project Overview
 
-## Project info
+This is my personal developer portfolio built with Vite + React + TypeScript + Tailwind + shadcn/ui.
+It showcases my projects, technical expertise, and professional experience as a Computer Engineering student passionate about full-stack development, AI, blockchain, and cloud computing.
 
-**URL**: https://lovable.dev/projects/b9c2b716-b76c-4457-810e-359259a13fe9
+🚀 Live Website
 
-## How can I edit this code?
+🔗 Visit Here: https://harintharan.github.io/portfolio
 
-There are several ways of editing your application.
+🛠️ Tech Stack
 
-**Use Lovable**
+Frontend: React, TypeScript, Tailwind CSS, shadcn/ui
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b9c2b716-b76c-4457-810e-359259a13fe9) and start prompting.
+Build Tool: Vite
 
-Changes made via Lovable will be committed automatically to this repo.
+Icons: Lucide React
 
-**Use your preferred IDE**
+Deployment: GitHub Pages (via gh-pages)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Design Philosophy: Modern, responsive, and minimal with subtle animations
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+⚙️ Local Setup
 
-Follow these steps:
+To run the portfolio locally:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1️⃣ Clone the repository
+git clone https://github.com/Harintharan/portfolio.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2️⃣ Navigate into the folder
+cd portfolio
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3️⃣ Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4️⃣ Start development server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Then open http://localhost:5173
+ in your browser 🚀
 
-**Use GitHub Codespaces**
+🌍 Deployment (GitHub Pages)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This portfolio is deployed directly to GitHub Pages using gh-pages.
 
-## What technologies are used for this project?
+To redeploy:
 
-This project is built with:
+# Build and deploy
+npm run deploy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
+Make sure your vite.config.ts includes:
 
-Simply open [Lovable](https://lovable.dev/projects/b9c2b716-b76c-4457-810e-359259a13fe9) and click on Share -> Publish.
+base: '/portfolio/'
 
-## Can I connect a custom domain to my Lovable project?
+🧑‍💻 Folder Structure
+portfolio/
+ ├── src/
+ │   ├── components/     # Reusable UI components
+ │   ├── sections/       # Page sections (Hero, About, Skills, etc.)
+ │   ├── assets/         # Images & icons
+ │   ├── hooks/          # Custom React hooks
+ │   └── main.tsx        # Entry point
+ ├── public/             # Static assets
+ ├── package.json
+ ├── vite.config.ts
+ └── README.md
 
-Yes, you can!
+✨ Features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+✅ Responsive design for desktop & mobile
+✅ Smooth animations using Tailwind transitions
+✅ Dark/light theme ready
+✅ Modular section-based architecture
+✅ Easy deployment & continuous updates
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+📬 Contact
+
+📧 Email: nharintharan@gmail.com
+
+💼 LinkedIn: linkedin.com/in/harintharan-nagalingam-233b5720b
+
+💻 GitHub: github.com/Harintharan

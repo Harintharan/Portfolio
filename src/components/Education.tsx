@@ -4,26 +4,29 @@ import { GraduationCap, Award } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "BSc (Hons) Computer Engineering",
+      degree: "BSc (Hons) in Computer Engineering",
       institution: "University of Ruhuna",
-      period: "2020 - Present",
+      period: "2021 - Present",
       highlights: [
-        "Focus on Software Engineering and Cloud Computing",
-        "Active participation in technical workshops and hackathons",
-        "Research interests in Blockchain and Distributed Systems"
-      ]
+        "Specializing in Cloud-Native Systems, Microservices Architecture, and Distributed Computing",
+        "Hands-on experience in AI/GenAI, Blockchain, and IoT-driven system design",
+        "Active involvement in research and project development using Spring Boot, React, and Express.js",
+      ],
     },
     {
-      degree: "Advanced Level Education",
-      institution: "Shivananda Vidyalaya",
+      degree: "G.C.E. Advanced Level (Physical Science Stream)",
+      institution: "Shivananda Vidyalaya National School, Batticaloa",
       period: "2017 - 2019",
       highlights: [
-        "Physical Science Stream",
-        "Strong foundation in Mathematics and Physics",
-        "Leadership roles in school technology clubs"
-      ]
-    }
+        "Strong foundation in Mathematics, Physics, and ICT",
+        "Engaged in technology-focused leadership roles and innovation clubs",
+        "Developed early interest in programming and engineering problem-solving",
+      ],
+    },
   ];
+
+
+
 
   return (
     <section id="education" className="py-20 px-4 bg-muted/30">
