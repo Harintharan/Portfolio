@@ -208,11 +208,32 @@ const Skills = () => {
     "Remix IDE",
   ];
 
-  const certifications = [
-    { name: "AWS for Beginners", issuer: "Great Learning", year: "2024" },
-    { name: "Cloud Computing Service Models", issuer: "Great Learning", year: "2024" },
-    { name: "Blockchain Fundamentals", issuer: "Alison", year: "2023" },
-  ];
+ const certifications = [
+  { 
+    name: "AWS for Beginners", 
+    issuer: "Great Learning", 
+    year: "2024",
+    link: "https://www.mygreatlearning.com/certificate/PSKSQCRB?referrer_code=GLIQKU-649HVK"
+  },
+  { 
+    name: "Cloud Computing Service Models", 
+    issuer: "Great Learning", 
+    year: "2024",
+    link: "https://www.mygreatlearning.com/certificate/DVNPQHKS?referrer_code=GLIQKU-649HVK"
+  },
+  { 
+    name: "SpringBoot", 
+    issuer: "Alison", 
+    year: "2023",
+    link: "https://alison.com/certification/check/9261a942be"
+  },
+  { 
+    name: "Blockchain", 
+    issuer: "IEEE / LinkedIn Post", 
+    year: "2023",
+    link: "https://www.linkedin.com/posts/harintharan-nagalingam-233b5720b_blockchain-cardano-ieee-activity-7341894542083661826-Npmo?utm_source=share&utm_medium=member_desktop&rcm=ACoAADViuYcBsms_xqSDhelkO-PAnar_oSEfV6I"
+  },
+];
 
   return (
     <section id="skills" className="py-20 px-4">
@@ -268,10 +289,15 @@ const Skills = () => {
           <h3 className="text-2xl font-bold mb-6 text-center">
             Certifications & Achievements
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {certifications.map((cert, index) => (
+           <div className="grid md:grid-cols-3 gap-6">
+          {certifications.map((cert, index) => (
+            <a
+              key={index}
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Card
-                key={index}
                 className="p-6 gradient-card shadow-card hover:shadow-elegant transition-smooth group cursor-pointer text-center"
               >
                 <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-smooth">
@@ -282,9 +308,11 @@ const Skills = () => {
                 </h4>
                 <p className="text-sm text-muted-foreground">{cert.issuer}</p>
               </Card>
-            ))}
-          </div>
+            </a>
+          ))}
         </div>
+        </div>
+
       </div>
     </section>
   );
