@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolio/', // must match repo name exactly (lowercase)
+  base: '/Portfolio/', // must match repo name exactly (repo name is capitalized)
   build: {
     outDir: 'dist',
   },
