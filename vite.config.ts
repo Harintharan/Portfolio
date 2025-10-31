@@ -6,9 +6,9 @@ export default defineConfig({
   plugins: [react()],
   base: '/Portfolio/', // must match repo name exactly (repo name is capitalized)
   resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url)),
-    },
+    alias: [
+      { find: /^@\//, replacement: fileURLToPath(new URL('./src/', import.meta.url)) },
+    ],
   },
   build: {
     outDir: 'dist',
