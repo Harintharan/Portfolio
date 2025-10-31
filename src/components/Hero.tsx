@@ -95,8 +95,10 @@ const Hero = () => {
             <div className="flex justify-center lg:justify-end order-1 lg:order-2 pt-16 sm:pt-10 md:pt-8 lg:pt-0">
               <div className="relative w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl ring-4 ring-primary/20 hover:ring-primary/40 transition-all duration-300 animate-slide-in-up">
                 <img
-                  src="/images/hari.jpeg"
-                  alt="Harintharan Nagalingam"
+                  // src="/images/hari.jpeg"
+                  // alt="Harintharan Nagalingam"
+
+                  src={`${import.meta.env.BASE_URL}images/hari.jpeg`} alt="Harintharan Nagalingam"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
